@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Motor Carrier Queen — Trucking Masterclass</title>
+<style>
+  :root{
+    --bg:#2b0b4d;   /* deep purple */
+    --card:#3a0f66; /* lighter purple */
+    --accent:#e3c23d; /* gold accent */
+    --white:#fff;
+  }
+  body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;
+    background:linear-gradient(180deg,var(--bg),#1e0735);color:var(--white);}
+  .wrap{max-width:920px;margin:40px auto;padding:28px}
+  .hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+  .left{flex:1;min-width:260px}
+  h1{font-size:36px;margin:0 0 10px;line-height:1.1}
+  h2{font-size:18px;margin:0 0 18px;color:var(--accent);font-weight:700}
+  p.lead{margin:0 0 18px;color:#f6f1ff;font-size:17px}
+  ul{padding-left:18px;margin:8px 0 22px}
+  li{margin:8px 0}
+  .cta-card{background:var(--card);padding:22px;border-radius:12px;margin-top:18px}
+  button.primary{background:var(--accent);border:none;padding:14px 22px;border-radius:8px;color:#210028;font-weight:700;cursor:pointer;font-size:16px}
+  .small{font-size:13px;color:#e8daff;margin-top:12px;text-align:center}
+  .right{width:320px;min-width:260px}
+  .truck{width:100%;height:220px;background:linear-gradient(180deg,#5a2a91,#2b0b4d);
+    border-radius:12px;display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:700;text-align:center;padding:20px}
+  footer{margin-top:26px;color:#cdbdf8;font-size:13px;text-align:center}
+  @media (max-width:640px){h1{font-size:28px}.right{width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="left">
+      <h2>MOTOR CARRIER QUEEN PRESENTS</h2>
+      <h1>Trucking Business Masterclass & Membership</h1>
+      <p class="lead">Step-by-step guidance to launch and grow your trucking company — from legal setup to finding profitable loads, pricing your services, and scaling with confidence.</p>
+
+      <ul>
+        <li>✔️ Business setup & compliance checklist</li>
+        <li>✔️ DOT/MC authority guidance</li>
+        <li>✔️ Load boards & broker strategies</li>
+        <li>✔️ Pricing worksheets & templates</li>
+      </ul>
+
+      <div class="cta-card">
+        <h3 style="text-align:center; color:var(--accent); margin-bottom:12px;">
+          Masterclass Enrollment — $97
+        </h3>
+        <!-- Stripe payment link button -->
+        <a href="https://buy.stripe.com/YOUR-STRIPE-LINK" target="_blank">
+          <button class="primary">💳 Pay & Save My Spot — $97</button>
+        </a>
+        <div class="small">
+          Questions? DM <strong>@MotorCarrierQueen</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="truck">🚛 <br/> Join the Masterclass & Membership <br/> Limited Spots Available!</div>
+      <div style="height:12px"></div>
+      <div style="background:rgba(255,255,255,0.08);padding:12px;border-radius:8px;text-align:center">
+        <strong>Secure your seat today</strong>
+      </div>
+    </div>
+  </div>
+
+  <footer>© <span id="year"></span> Motor Carrier Queen • All Rights Reserved</footer>
+</div>
+
+<script>document.getElementById('year').innerText = new Date().getFullYear();</script>
+</body>
+</html>
